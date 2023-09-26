@@ -1,46 +1,57 @@
 * {
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-img {
-    display: block;
-    max-width: 100%;
-}
-.container-fluid {
-    background:linear-gradient(rgb(10, 15, 26),rgb(10, 15, 26),rgb(30, 44, 58),rgb(30, 44, 58),  rgb(7, 18, 29), rgb(10, 15, 26));
     color: white;
-    height: auto;
-    overflow:hidden;
-}
-.header {
-    background-color: linear-gradient(rgb(10, 15, 26, 35, 45));
-    display: flex;
-    border-bottom: 2px solid #c8bebe;
-   
+    scroll-behavior: smooth;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
+body{
+    background-color:linear-gradient(rgb(10, 15, 26),rgb(10, 15, 26),rgb(30, 44, 58),rgb(30, 44, 58),  rgb(7, 18, 29), rgb(10, 15, 26));
+}
+
+.container-fluid {
+    --bs-gutter-x: 0px;
+    --bs-gutter-y: 0px;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgb(10, 15, 26),rgb(10, 15, 26),rgb(30, 44, 58),rgb(30, 44, 58),  rgb(7, 18, 29), rgb(10, 15, 26));
+}
 a, .btn {
     transition: all 300ms ease;
 }
 
-.logo h3 {
+/* Header Section */
+.main-nav {
+    position: absolute;
+    display: flex;
+    background-color: transparent;
+    overflow:hidden;
+}
+
+.logo {
+    padding: 10px;;
+    display: flex;
+    justify-content:left;
+    margin-top: 5px;
+    margin-right: 170px;
+    margin-left: 0;
+    bottom: 20px;
+    display: block;
+}
+.main-nav .logo h3 {
     text-decoration: none;
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-bottom: 20px;
     color:rgb(84, 217, 240);
     text-shadow:  2px 2px 4px rgba(165, 167, 167, 0.795);
 }
-.logo a{
+.main .logo a{
     text-decoration: none;
 }
 
-.logo .name{
+.main-nav .logo .name{
     color:rgb(84, 217, 240);
     text-shadow:  2px 2px 4px rgba(165, 167, 167, 0.795);
 }
@@ -54,55 +65,105 @@ a, .btn {
     cursor: pointer;
 }
 
-.main-nav {
-    margin: 25px;
-}
-
-.main-nav ul {
-    list-style-type: none;
-    display:flex;
-    gap: 4.0em;
-    margin: 0;
-    margin-right: 40px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    position: relative;
-}
-
 .main-nav a {
     text-decoration: none;
     color:rgb(84, 217, 240);
 }
 
-.main-nav ul a:hover,
-.main-nav a.active {
+/* Navigation links */
+.nav-links ul{
+    padding: 15px;
+    margin: 20px;
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    overflow: hidden;
+    gap: 3.5em;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.nav-links  a:hover,
+.nav-links a.active {
     color:#ffffff;
     text-decoration: underline;
     text-underline-offset: 0.5rem;
     text-decoration-thickness: 2px;
-    text-decoration-color: rgb(241, 237, 6);
+    text-decoration-color: rgba(144, 178, 175, 0.621);
 }
 
+.sidebar ul{
+    padding: 15px;
+    margin: 20px;
+    display:flex;
+    justify-content: flex-start;
+    list-style: none;
+    overflow: hidden;
+    gap: 3.5em;
+    font-size: 0.9rem;
+    font-weight: bold;
+    flex-direction: column;
+}
+.sidebar ul a:hover{
+    color:#ffffff;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgba(144, 178, 175, 0.621);
+}
+.sidebar {
+    display: none;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+span svg {
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 220px;
+    fill:#fdfbfb;
+    display: none;
+}
+.menubar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Sections*/
 section{
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
     background:linear-gradient(rgb(10, 15, 26),rgb(10, 15, 26),rgb(30, 44, 58),rgb(30, 44, 58),  rgb(7, 18, 29), rgb(10, 15, 26));
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    width: 100%;
-
 }
 
+/*Home Section*/
+#home{
+    padding:0px;
+    margin: 0px;
+}
 #home .row{
-    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
     margin-left: 30px;
-  
+    margin-top: 120px;
 }
+
 .intro {
     margin-top: 60px;
 }
 .intro h1{
-   color:rgb(221, 232, 56);
+   color:aqua;
    font-weight: bold;
 }
 
@@ -169,13 +230,12 @@ section{
     height: 100%;
     top: -50px;
     left: 0;
-    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    background: linear-gradient(-45deg, #9465b4, #0cb7dd);
     position: absolute;
     transition: 0.5s;
 }
 .social-links a:hover::after{
     top: 0;
-
 }
 
 .social-links a:hover .fa-brands{
@@ -183,6 +243,13 @@ section{
 }
 .social-links a:hover{
     transform: translateY(-10px);
+}
+
+.icons {
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
 }
 
 .btn{
@@ -195,14 +262,17 @@ section{
     border-radius: 5px;
     font-size: 16px;
     color:#242121;
-    
-    
 }
 
 /* About Section*/
 #about .row{
+    position:relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     color:#fffbfb;
-    margin-top:60px;
+    margin-top:50px;
+    margin-bottom: 50px;
 }
 #about img{
     margin:20px;
@@ -214,36 +284,38 @@ section{
     box-shadow: 12px 10px 32px 4px rgba(0,0,0,0.75);
     border-radius: 60%;
 }
-
 #about h2{
     margin: 20px;
     margin-left: 100px;
     font-size:2.1rem;
     font-weight: 900;
     color:rgb(84, 217, 240);
-   
 }
-
 #about .personal{
     margin-top: 30px;
     margin-left: 60px;
 }
 
-/*Skills*/
+/*Skills Section*/
 #skills .card{
-    margin-top: 70px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
     background:linear-gradient(rgb(61, 79, 97), rgb(10, 15, 26));
     list-style: none;
     color:#fffbfb;
 }
 
+#skills .card-body {
+    margin: 10px;
+    padding: 10px;
+}
 
 #skills h1{
     margin-left: 80px;
     font-size:2.1rem;
     font-weight: 900;
     color:rgb(84, 217, 240);
-
 }
 
 #skills li{
@@ -251,6 +323,7 @@ section{
     padding: 3px;
 }
 
+/* Skills bars */
 .bar {
     background: #131212;
     display: block;
@@ -265,7 +338,6 @@ section{
 .bar:hover{
     box-shadow: 0 14px 25px rgb(0, 0, 0, 0.22), 0 10px 10px rgba(0, 0, 0, 0,20);
 }
-
 
 .bar span{
     height: 10px;
@@ -395,17 +467,28 @@ section{
     }
 }
 
-/*experience*/
-#experience .row{
-    margin: 30px;
-    margin-top: 60px;
-    padding: 20px;
-    display: flex;
+.card{
+    --bs-card-border-width: 0;
+    background:linear-gradient(rgb(10, 15, 26),rgb(10, 15, 26),rgb(30, 44, 58),rgb(30, 44, 58),  rgb(7, 18, 29), rgb(10, 15, 26));
 }
+/*Experience Section*/
 
-#experience h1{
-    margin-left: 500px;
-    margin-bottom: 20px;
+#experience .card{
+    margin: 20px;
+
+}
+#experience .card-body{
+    color: white;
+    display: center;
+    border-style: none;
+    background:linear-gradient(rgb(10, 15, 26),rgb(10, 15, 26),rgb(30, 44, 58),rgb(30, 44, 58),  rgb(7, 18, 29), rgb(10, 15, 26));
+}
+#experience li{
+    font-size: small;
+}
+#experience .card-title{
+    position: center;
+    margin-bottom: 50px;
     font-size:2.1rem;
     font-weight: 900;
     color:rgb(84, 217, 240);
@@ -415,24 +498,38 @@ section{
     color:rgb(202, 230, 132);
 }
 
+/* Projects Section*/
+#projects .row {
+    margin:20px;
+    padding:20px;
+    margin-bottom: 120px;
+
+}
 #projects .card{
+    display: flex;
+    margin: 15px;
+    margin-top: 200px;
     list-style: none;
     color:#fdfbfb;
     background:linear-gradient(rgb(61, 79, 97), rgb(10, 15, 26));
 }
-/* Projects*/
-#projects .row {
-    width: 80%;
-    height: auto;
-    margin:30px;
-    padding:20px;
-}
+
 #projects h2{
     margin-left: 300px;
     margin-bottom: 20px;
     font-size:2.1rem;
     font-weight: 900;
     color:rgb(84, 217, 240);
+}
+#projects h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    margin-bottom: 500px;
+    margin-top: 0px;
+    color:rgb(84, 217, 240);
+    font-weight: 700;
 }
 #projects li{
     margin: 20px;
@@ -441,13 +538,17 @@ section{
 #projects h4{
     color:rgb(84, 217, 240);
     margin-left:20px;
-
 }
 #projects a{
     text-decoration: none;
     font-weight: 1.2rem;
 }
 
+#education .edu {
+    margin-bottom: 80px;
+}
+
+/* Education section*/
 #education h1{
     color:rgb(84, 217, 240);
     font-weight: bold;
@@ -458,5 +559,123 @@ section{
     color:rgb(181, 197, 99);
 }
 
+.col-sm {
+    padding: 0px;
+}
 
+
+/* Show hamburger menu on small screen */
+@media screen and (max-width: 800px) {
+    /* Header Section */
+    .nav-links {
+        display: none;
+        align-items:center;
+    }
+    .logo {
+         position: relative;
+         display: flex;
+         margin: 0;
+         top: 0;
+         left: 0;
+     }
+
+    /* Home Section*/
+     #home .row {
+         padding: 0px;
+         position:relative;
+         display: flex;
+         justify-content:center;
+         align-items: center;
+         margin: 10px;
+         margin-bottom: 0;
+         margin-top: 50px;
+     }
+     #home .intro{
+         margin: 10px;
+         margin-top: 40px;
+     }
+     #home .image {
+         display: flex;
+         justify-content: center;
+         margin-bottom: 0; 
+     }
+     #home .social-links {
+         margin: 20px;
+         margin-bottom: 10px;
+     }
+
+    /* About Section*/
+     #about .row {
+         margin: 10px;
+         position: relative;
+         display: flex;
+         justify-content: center;
+     }
+     #about img {
+        display: none;
+     }
+
+     /* Skills Section*/
+     #skills {
+         position: block;
+     }
+
+    /* Menu bar*/
+     .menubar svg {
+         margin: 0;
+         padding: 0;
+         display: flex;
+         fill:#fdfbfb;
+         
+     }
+     .menubar {
+        z-index: 1000;
+        position: fixed;
+         padding: 0;
+         margin-top: 15px;
+         margin-right: 15px;
+         top: 0;
+         right:0;
+         display: inline-block;
+     }
+ 
+     .sidebar{
+         position: fixed;
+         padding: 15px;
+         display: none;
+         justify-content: center;
+         list-style: none;
+         overflow: hidden;
+         gap: 3.5em;
+         font-size: 0.9rem;
+         font-weight: bold;
+         top: 0;
+         right: 0;
+         height: 100vh;
+         width: 260px;
+         z-index: 999;
+         background-color: rgba(237, 233, 233, 0.03);
+         backdrop-filter: blur(10px);
+         box-shadow: -10px 0 10px rgba( 0, 0, 0, 0.1);
+         flex-direction: column;
+         align-items: flex-start;
+         justify-content: flex-start;
+     }
+ 
+     .sidebar.active {
+         display: block;
+     }
+ 
+     .close_icon svg {
+         margin: 0;
+         padding: 0;
+         display: flex;
+         color: white;
+         top: 0;
+         left: 0;
+     }
+     .col-md {
+         padding: 0;
+     }
+ }
 
