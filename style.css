@@ -406,7 +406,7 @@ section{
         width: 90;
     }
 }
-@keyframes JDBC{
+@keyframes jdbc{
     0%{
         width: 0%;
     }
@@ -414,7 +414,7 @@ section{
         width: 90;
     }
 }
-@keyframes SQL{
+@keyframes sql{
     0%{
         width: 0%;
     }
@@ -454,7 +454,7 @@ section{
         width: 90;
     }
 }
-@keyframes Django{
+@keyframes django{
     0%{
         width: 0%;
     }
@@ -462,7 +462,7 @@ section{
         width: 90;
     }
 }
-@keyframes Spring-boot{
+@keyframes spring-boot{
     0%{
         width: 0%;
     }
