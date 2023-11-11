@@ -355,15 +355,15 @@ section{
 }
 .jdbc{
     width:75%;
-    animation: JDBC 3s;
+    animation: jdbc 3s;
 }
 .sql{
     width:70%;
-    animation: SQL 3s;
+    animation: sql 3s;
 }
-.Machine-Learning{
+.machine-learning{
     width:50%;
-    animation: Machine-Learning 3s;
+    animation: machine-learning 3s;
 }
 .html5{
     width:85%;
@@ -375,15 +375,15 @@ section{
 }
 .bootstrap{
     width:60%;
-    animation: javascript 3s;
+    animation: bootstrap 3s;
 }
 .javascript{
     width:40%;
-    animation: bootstrap 3s;
+    animation: javascript 3s;
 }
-.Django{
+.django{
     width:40%;
-    animation: Django 3s;
+    animation: django 3s;
 }
 .spring-boot{
     width:40%;
