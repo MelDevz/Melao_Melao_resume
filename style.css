@@ -351,39 +351,43 @@ section{
 }
 .java{
     width:75%;
-    animation: python 3s;
+    animation: java 3s;
+}
+.JDBC{
+    width:75%;
+    animation: JDBC 3s;
 }
 .sql{
     width:70%;
-    animation: python 3s;
+    animation: SQL 3s;
 }
-.python-oop{
-    width:75%;
-    animation: python-oop 3s;
+.Machine-Learning{
+    width:50%;
+    animation: Machine-Learning 3s;
 }
-.html{
+.html5{
     width:85%;
     animation: html 3s;
 }
-.css{
+.CSS3{
     width:85%;
     animation: css 3s;
 }
-.javascript{
-    width:40%;
+.bootstrap{
+    width:60%;
     animation: javascript 3s;
 }
-.bootstrap{
-    width:50%;
+.javascript{
+    width:40%;
     animation: bootstrap 3s;
 }
-.agile-dev{
-    width:50%;
-    animation: agile-dev 3s;
+.Django{
+    width:40%;
+    animation: Django 3s;
 }
-.git{
-    width:60%;
-    animation: git 3s;
+.spring-boot{
+    width:40%;
+    animation: spring-boot 3s;
 }
 
 @keyframes python{
@@ -402,7 +406,7 @@ section{
         width: 90;
     }
 }
-@keyframes sql{
+@keyframes JDBC{
     0%{
         width: 0%;
     }
@@ -410,7 +414,7 @@ section{
         width: 90;
     }
 }
-@keyframes python-oop{
+@keyframes SQL{
     0%{
         width: 0%;
     }
@@ -418,7 +422,7 @@ section{
         width: 90;
     }
 }
-@keyframes html{
+@keyframes html5{
     0%{
         width: 0%;
     }
@@ -426,15 +430,7 @@ section{
         width: 90;
     }
 }
-@keyframes css{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 90;
-    }
-}
-@keyframes javascript{
+@keyframes CSS3{
     0%{
         width: 0%;
     }
@@ -450,7 +446,7 @@ section{
         width: 90;
     }
 }
-@keyframes agile-dev{
+@keyframes javascript{
     0%{
         width: 0%;
     }
@@ -458,7 +454,15 @@ section{
         width: 90;
     }
 }
-@keyframes git{
+@keyframes Django{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90;
+    }
+}
+@keyframes Spring-boot{
     0%{
         width: 0%;
     }
