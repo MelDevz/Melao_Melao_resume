@@ -367,11 +367,11 @@ section{
 }
 .html5{
     width:85%;
-    animation: html 3s;
+    animation: html5 3s;
 }
 .css3{
     width:85%;
-    animation: css 3s;
+    animation: css3 3s;
 }
 .bootstrap{
     width:60%;
