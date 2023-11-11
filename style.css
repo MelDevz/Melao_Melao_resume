@@ -363,7 +363,7 @@ section{
 }
 .machine-learning{
     width:50%;
-    animation: machine-learning 3s;
+    animation: python 3s;
 }
 .html5{
     width:85%;
@@ -383,7 +383,7 @@ section{
 }
 .django{
     width:40%;
-    animation: django 3s;
+    animation: python 3s;
 }
 .spring-boot{
     width:40%;
